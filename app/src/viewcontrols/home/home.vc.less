@@ -1,3 +1,5 @@
+@import "main.less";
+
 & {
     #platui > #media;
     #platui > #mixins;
@@ -8,13 +10,19 @@
     }
 }
 
+@font-face {
+    font-family: 'Brandon Grotesque';
+    src: url(../../fonts/HVD Fonts - BrandonGrotesque-Black.otf);
+    src: url(../../fonts/HVD Fonts - BrandonGrotesque-Black.ttf);
+    src: url(../../fonts/HVD Fonts - BrandonGrotesque-Black.woff);
+}
 
 .hero {
     background-image: url('/images/OHenrys-Hero.jpg');
     background-size: cover;
     text-align: center;
     
-    .plat-navbar {
+    .navbar {
         background-color: transparent;
 
         .facebook {
@@ -25,12 +33,60 @@
             background-image: url('/images/twitter.png');
         }
     }
+}
+
+.brand {
+        font-family: Brandon Grotesque;
+        margin: 0;
+        
+        .logo {
+            
+            padding: 300px;
+            h2 {
+                text-transform: uppercase;
+                font-family: Brandon Grotesque;
+            }
+            p{ 
+                text-align: center;
+            }
+            img {
+                width: 50%;
+            }
+    }
+}
+
+.featured-container {
+    background-color: #e9eaeb;
     
-    .brand {
-        top: 50%;
+    img {
+        width: 15%;
+    }
+    
+    .product {
+        padding-left: 150px;
+        
+        
+        h2 {
+            font-family: Brandon Grotesque;
+            text-transform: uppercase;
+        }
+        p {
+            margin: 0 auto;
+        }
+    }
+    
+    
+    .title {
+        font-family: Brandon Grotesque;
+        text-transform: uppercase;
+        text-align: center;
+        color: #a44b1f;
+    }
+    
+    .product-image { 
         img {
             width: 50%;
-            height: 50%;
         }
     }
 }
+    
