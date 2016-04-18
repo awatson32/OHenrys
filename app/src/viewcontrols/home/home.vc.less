@@ -10,29 +10,33 @@
     }
 }
 
-@font-face {
-    font-family: 'Brandon Grotesque';
-    src: url(../../fonts/HVD Fonts - BrandonGrotesque-Black.otf);
-    src: url(../../fonts/HVD Fonts - BrandonGrotesque-Black.ttf);
-    src: url(../../fonts/HVD Fonts - BrandonGrotesque-Black.woff);
-}
 
 .hero {
     background-image: url('/images/OHenrys-Hero.jpg');
     background-size: cover;
     text-align: center;
     
-    .navbar {
+    .plat-navbar {
         background-color: transparent;
-
-        .facebook {
-            background-image: url('/images/facebook.png');
-        }
-
-        .twitter {
-            background-image: url('/images/twitter.png');
+        // border: 0px solid transparent;
+        
+        a {
+            color: white;
+            font-family: WorkSans Bold;
+            padding: 5px;   
         }
     }
+}
+
+.social-icon {
+    width: 10%;
+    padding: 10px;
+}
+
+
+.center-mark {
+    width: 15%;
+    margin-top: 5px;
 }
 
 .brand {
@@ -41,8 +45,11 @@
         
         .logo {
             
-            padding: 300px;
+            padding: 250px;
             h2 {
+                width: 70%;
+                font-size: 2.5em;
+                color: @secondary-color;
                 text-transform: uppercase;
                 font-family: Brandon Grotesque;
             }
@@ -50,7 +57,8 @@
                 text-align: center;
             }
             img {
-                width: 50%;
+                position: relative;
+                width: 55%;
             }
     }
 }
@@ -62,13 +70,14 @@
         width: 15%;
     }
     
-    .product {
-        padding-left: 150px;
+    .product {        
         
-        
+        left: 150px;
         h2 {
             font-family: Brandon Grotesque;
+            font-weight: 100;
             text-transform: uppercase;
+            width: 100%;
         }
         p {
             margin: 0 auto;
@@ -80,7 +89,10 @@
         font-family: Brandon Grotesque;
         text-transform: uppercase;
         text-align: center;
-        color: #a44b1f;
+        padding-top: 50px;
+        font-size: 1em;
+        letter-spacing: .5em;
+        color: @primary-color;
     }
     
     .product-image { 
@@ -90,3 +102,96 @@
     }
 }
     
+    
+.location-container {
+
+    color: @secondary-color;
+    font-family: Brandon Grotesque;
+    font-weight: 100;
+    
+    a {
+        border: 2px solid white;
+        border-radius: 5px;
+        padding: 10px 15px;
+        color: white;
+        font-size: 2em;
+        text-transform: uppercase;
+    }
+    .retail {
+        background-image: url('/images/boxes.png');
+        text-align: center;
+        padding: 100px;
+    }
+    
+    .locations {
+        background-image: url('/images/ohc.png');
+        text-align: center;
+        padding: 100px;
+    }
+}
+
+.about {
+    text-align: center;
+    width: 50%;
+    margin-left: 25%;
+    padding: 0;
+    h1 {
+        font-family: Brandon Grotesque;
+        font-size: 4em;
+        color: @primary-color;
+        margin-top: -25px;
+        margin-bottom: -25px;
+    }
+    
+    p {
+        font-family: Roboto Condensed;
+        font-weight: 100;
+        font-size: 1.25em;
+        text-align: center;
+        width: 100%;
+        
+    }
+    
+    h5 {
+        color: @primary-color;
+        font-size: 1em;
+        text-transform: uppercase;
+        font-family: Brandon Grotesque;
+        margin-top: 50px;
+    }
+    
+    #about-border {
+        margin-top: 100px;
+        width: 25%;
+    }
+    
+    .plat-button {
+        padding: 15px 20px;
+        text-transform: uppercase;
+        color: @secondary-color;
+        font-family: WorkSans Bold;
+        background-color: #404040;
+        border-radius: 5px;
+        margin: 10px auto;
+        width: 25%;
+    }
+}
+
+.social {
+    
+    margin-bottom: 0;
+    img {
+        width: 100%;
+        padding: 0;
+    }
+    
+}
+
+.footer {
+    height: 300px;
+    background-color: #404040;
+    .brand-image {
+        width: 50%;
+        margin-left: 25%;
+    }
+}
