@@ -1,19 +1,26 @@
 <div class="hero">
     <plat-navbar class="navbar">
         <left>
-            <img class="social-icon" src="../../images/header-fb-icon.png">
-            <img class="social-icon"src="../../images/header-twitter-icon.png">
-            <img class="social-icon"src="../../images/header-insta-icon.png">
+            <img class="nav-icon" src="../../images/header-fb-icon.png">
+            <img class="nav-icon"src="../../images/header-twitter-icon.png">
+            <img class="nav-icon"src="../../images/header-insta-icon.png">
             
         </left>
         
-        <center>
+        <center class="center-nav">
+            
             <a href="#">About</a>
             <a href="#">Buy Online</a>
             <img class="center-mark" src="../../images/oh-mark.png">
             <a href="#">Find Us</a>
             <a href="#">Wholesale</a>
+            
         </center>
+        
+        <right>
+            <img class="nav-icon" src="../../images/header-cart-icon.png">
+            <a href="#">your cart</a>
+        </right>
     </plat-navbar>
     
     <div class="brand">
@@ -26,28 +33,42 @@
 </div>
 <div class="featured-container">
     <div class="title">
-        <h4>featured product</h4>
+        <div>featured product</div>
         <img src="../../images/divider-pattern.png">
     </div>
     <div class="row">
-        <div class="col-dsk-6 product">
+        <div class="col-dsk-6 col-phn-12 product">
             <h2>o'henry's breakfast blend</h2>
             <p>A bright & Crisp waker upper. An O'Henry's favorite.</p>
             
-            <div>roast</div>
+            <h3>roast</h3>
+            <plat-radio></plat-radio>
+            <plat-radio></plat-radio>
+            <plat-radio></plat-radio>
+            <plat-radio></plat-radio>
+            <plat-radio></plat-radio> 
             <span class="measure">light & mild</span>
             
-            <div>grind options</div>
             
-            <div>
-                <plat-button>add to cart</plat-button>
-                <plat-button>view shop</plat-button>
+            <div class="grind-options">
+                <h3>grind options</h3>
+                <button class="options">whole bean</button>
+                <button class="options">drip</button>
+                <button class="options">press pot / perculator</button>
+                <button div class="options">espresso</button>
+                <button class="options">grind</button> 
+            </div>
+            
+            <div class="button-container">
+                <plat-button id="add">add to cart</plat-button>
+                <plat-button id="view">view shop</plat-button>
             </div>
         </div>
         
-        <div class="col-dsk-6 product-image">
-            <img src="../../images/mug.png">
-            <img src="../../images/package.png">
+        <div class="col-dsk-6 col-phn-12 product-image">
+            <img id="package" src="../../images/package.png">
+            <img id="mug" src="../../images/mug.png">
+            
         </div>
     </div>  
 </div>
@@ -63,17 +84,24 @@
     </div>
 </div>
 
-<div class="about">
-    <!--<img id="about-border" src="../../images/white-triangle-outline.png">-->
 
+
+<div class="about">
+     <img id="about-border" src="../../images/white-triangle-outline.png">
     <h5>since</h5>
     <h1>1993</h1>
-    <p>Dr. Henry Bright, a retired orthodontist, opened the first O'Henry's in 1993 in Homewood, Alabama, a 1920's 
-        suburb of Birmingham. To this day, O'Henry's buys and roasts their own beans at sister company O'Henry's Coffee 
-        Roasting Company, also in Homewood. These beans represent the top 1% of the world has to offer.
-    </p>
+   
+    <div class="paragraph">
+        <p>
+            Dr. Henry Bright, a retired orthodontist, opened the first O'Henry's in 1993 in Homewood, Alabama, a 1920's 
+            suburb of Birmingham. To this day, O'Henry's buys and roasts their own beans at sister company O'Henry's Coffee 
+            Roasting Company, also in Homewood. These beans represent the top 1% of the world has to offer.
+        </p>
+    </div>
+    
     
     <plat-button>learn more</plat-button>
+    
 </div>
 
 <div class="social">
@@ -99,13 +127,18 @@
             <img class="brand-image" src="../../images/logo-old.png">
         </div>
         <div class="col-dsk-4">
-            
+            <a href="#">about</a>
+            <a href="#">find us</a>
+            <a href="#">buy online</a>
+            <a href="#">wholesale</a>
+            <a href="#">press</a>
+            <a href="#">catering</a>
         </div>
         <div class="col-dsk-4">
             <plat-button>contact</plat-button>
-            <img src="../../images/facebook-icon.png">
-            <img src="../../images/twitter-icon.png">
-            <img src="../../images/instagram-icon.png">
+            <img id="social" src="../../images/facebook-icon.png">
+            <img id="social" src="../../images/twitter-icon.png">
+            <img id="social" src="../../images/instagram-icon.png">
         </div>
     </div>
 </div>

@@ -15,29 +15,35 @@
     background-image: url('/images/OHenrys-Hero.jpg');
     background-size: cover;
     text-align: center;
+}
+
+.plat-navbar {
+    background-color: transparent;
+    // border: 0px solid transparent;
     
-    .plat-navbar {
-        background-color: transparent;
-        // border: 0px solid transparent;
-        
-        a {
-            color: white;
-            font-family: WorkSans Bold;
-            padding: 5px;   
-        }
+    left {
+       text-align: left;
+    }
+    a {
+        color: white;
+        font-family: WorkSans Bold;
+        font-size: 1em;
+        text-transform: uppercase;
+    }
+    
+    .nav-icon {
+        width: 10%;
+        padding-left: 10px;
+    }
+
+
+    .center-mark {
+        width: 15%;
+        margin-top: 5px;
     }
 }
 
-.social-icon {
-    width: 10%;
-    padding: 10px;
-}
 
-
-.center-mark {
-    width: 15%;
-    margin-top: 5px;
-}
 
 .brand {
         font-family: Brandon Grotesque;
@@ -52,6 +58,7 @@
                 color: @secondary-color;
                 text-transform: uppercase;
                 font-family: Brandon Grotesque;
+                margin-left: 150px;
             }
             p{ 
                 text-align: center;
@@ -64,7 +71,7 @@
 }
 
 .featured-container {
-    background-color: #e9eaeb;
+    background-color: #c3c4c4;
     
     img {
         width: 15%;
@@ -78,10 +85,68 @@
             font-weight: 100;
             text-transform: uppercase;
             width: 100%;
+            margin-bottom: -35px;
         }
         p {
-            margin: 0 auto;
+            font-family: Roboto Condensed;
+            font-size: 1.25em;
+            color: @primary-color;
+            font-weight: 100;
+            line-height: 2em;
+            margin-bottom: 25px;
         }
+        .measure {
+            font-family: Brandon Grotesque;
+            text-transform: uppercase;
+            color: @primary-color;
+        }
+        .plat-radio {
+            @fill-color: @primary-color;
+            color: @primary-color;
+        }
+        h3 {
+            color: @primary-color;
+            font-family: Brandon Grotesque;
+            font-size: 1em;
+            text-transform: uppercase;
+            font-weight: 200;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+        
+        .grind-options {
+            width: 90%;
+        }
+        .options {
+            font-family: WorkSans Bold;
+            color: @primary-color;
+            border: 1px solid @primary-color;
+            border-radius: 30px;
+            padding: 10px 20px;
+            text-transform: uppercase;
+            background-color: transparent;
+            margin: 5px;
+        }
+        
+        .button-container {
+            margin-top: 50px;
+            
+            .plat-button {
+                text-transform: uppercase;
+                color: white;
+                font-family: WorkSans Bold;
+                font-size: 1em;
+                padding: 10px 15px;
+                border-radius: 10px;
+            }
+            #add {
+                background-color: @primary-color;
+            }
+            #view {
+                background-color: #323133;
+            }
+        }
+        
     }
     
     
@@ -96,8 +161,18 @@
     }
     
     .product-image { 
-        img {
+        
+        margin-bottom: 700px;
+        
+        #package {
+            width: 100%
+        }
+        #mug {
+            margin-top: 35%;
             width: 50%;
+        }
+        img {
+            position: absolute;
         }
     }
 }
@@ -108,6 +183,7 @@
     color: @secondary-color;
     font-family: Brandon Grotesque;
     font-weight: 100;
+    margin-bottom: -20px;
     
     a {
         border: 2px solid white;
@@ -121,6 +197,7 @@
         background-image: url('/images/boxes.png');
         text-align: center;
         padding: 100px;
+        
     }
     
     .locations {
@@ -130,11 +207,22 @@
     }
 }
 
+
 .about {
+    background-color: #c3c4c4;
     text-align: center;
-    width: 50%;
-    margin-left: 25%;
-    padding: 0;
+    width: 100%;
+    padding-top: 100px;
+    // padding: 0;
+    
+    #about-border {
+    position: absolute;
+    margin-top: -50px;
+    width: 20%;
+    margin-left: -155px;
+}
+    
+
     h1 {
         font-family: Brandon Grotesque;
         font-size: 4em;
@@ -148,7 +236,8 @@
         font-weight: 100;
         font-size: 1.25em;
         text-align: center;
-        width: 100%;
+        width: 45%;
+        margin-left: 25%;
         
     }
     
@@ -157,14 +246,8 @@
         font-size: 1em;
         text-transform: uppercase;
         font-family: Brandon Grotesque;
-        margin-top: 50px;
     }
-    
-    #about-border {
-        margin-top: 100px;
-        width: 25%;
-    }
-    
+  
     .plat-button {
         padding: 15px 20px;
         text-transform: uppercase;
@@ -188,10 +271,31 @@
 }
 
 .footer {
-    height: 300px;
+    margin: 0 auto;
     background-color: #404040;
+    height: 200px;
+    
+    a {
+        color: #5d555b;
+        text-transform: uppercase;
+        font-family: WorkSans Bold;
+        font-size: 1em;
+        padding: 15px;
+        margin-top: 50px;
+    }
     .brand-image {
         width: 50%;
         margin-left: 25%;
+    }
+    
+    #social {
+        width: 10%;
+        display: inline-block;
+    }
+    
+    .plat-button {
+        background-color: @primary-color;
+        padding: 10px 15px;
+        color: white;
     }
 }
